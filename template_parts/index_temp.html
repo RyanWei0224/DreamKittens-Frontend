@@ -1,0 +1,37 @@
+﻿<!DOCTYPE HTML>
+<html>
+  <head>
+    $$header$$
+  </head>
+  <body>
+    $$body$$
+    <div style="padding: 0 100px;">
+      <h2>售卖列表</h2>
+    </div>
+    <br />
+    <p>
+      <center>
+        <p id = "sale_load">加载中...</p>
+        <table id = "sale_table" style="max-width:1000px"></table>
+      </center>
+    </p>
+    <div style="padding: 0 100px;">
+      <h2>我的猫猫</h2>
+    </div>
+    <br />
+    <p>
+      <center>
+        <p id = "kitty_load">加载中...</p>
+        <table id = "kitty_table" style="max-width:1000px"></table>
+      </center>
+    </p>
+  </body>
+  <script>
+    async function ff(){
+      var account = await login().catch(err => {throw '登录错误';});
+      getSales().catch(window.alert);
+      getKitties().catch(window.alert);
+    }
+    ff().then().catch(window.alert);
+  </script>
+</html>

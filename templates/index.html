@@ -1,0 +1,82 @@
+﻿<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/css/bootstrap-switch.css">
+    <link rel="stylesheet" href="./static/css/kitty.css">
+    <style data-styled="active" data-styled-version="5.3.5"></style>
+
+    <script src="./static/js/jquery-2.1.4.min.js"></script>
+    <script src="./static/js/bootstrap.min.js"></script>
+    <script src="./static/js/bootstrap-switch.js"></script>
+    <script src="./static/js/mqtt.min.js"></script>
+    <script src="./static/js/flexible.js"></script>
+    <script src="./static/js/web3.min.js"></script>
+    <script src="./static/js/abi.js"></script>
+    <script src="./static/js/kitty.js"></script>
+
+  </head>
+  <body>
+    <div  class= "navbar navbar-default">
+      <div class="container-fluid" >
+        <div class="navbar-header" >
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false"  data-target= "#navContent">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/index">DreamKittens</a>
+        </div>
+        <div class="collapse navbar-collapse"  id= "navContent">
+          <form class="navbar-form navbar-right" action="/cat" target="_self">
+            <div class="form-group">
+              <input type="text" name="cat_id" value="" class= "form-control" placeholder= "name or id" />
+            </div>
+            <input type="submit" value="搜索" class= "btn btn-default" />
+          </form>
+          <ul class="nav navbar-nav navbar-right" >
+            <li role="presentation" class="  " >
+                <a href="/sale">猫猫售卖</a>
+            </li>
+            <li role="presentation" class="  " >
+                <a href="/my">我的猫猫</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div style="padding: 0 100px;">
+      <h2>售卖列表</h2>
+    </div>
+    <br />
+    <p>
+      <center>
+        <p id = "sale_load">加载中...</p>
+        <table id = "sale_table" style="max-width:1000px"></table>
+      </center>
+    </p>
+    <div style="padding: 0 100px;">
+      <h2>我的猫猫</h2>
+    </div>
+    <br />
+    <p>
+      <center>
+        <p id = "kitty_load">加载中...</p>
+        <table id = "kitty_table" style="max-width:1000px"></table>
+      </center>
+    </p>
+  </body>
+  <script>
+    async function ff(){
+      var account = await login().catch(err => {throw '登录错误';});
+      getSales().catch(window.alert);
+      getKitties().catch(window.alert);
+    }
+    ff().then().catch(window.alert);
+  </script>
+</html>

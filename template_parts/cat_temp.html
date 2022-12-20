@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    $$header$$
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute; width: 0; height: 0" id="__SVG_SPRITE_NODE__">
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42" id="activity-history">
+        <g fill="none" fill-rule="evenodd">
+          <ellipse cx="21" cy="20.971" fill="#D3F2CF" rx="21" ry="20.971"></ellipse>
+          <g transform="translate(11 12.5)">
+            <rect width="21" height="17.182" fill="#FBFFF8" rx="2"></rect>
+            <path fill="#C1FF86" d="M2 0h17a2 2 0 0 1 2 2v3.25H0V2a2 2 0 0 1 2-2z"></path>
+            <path fill="#8FC65A" d="M1 1h1.25v4.25H1z"></path>
+            <path fill="#C1D3B0" d="M1 5h1.25v10.432a.5.5 0 0 0 .5.5h17.533v1.25H1V5z"></path>
+            <path fill="#FFF" d="M19.25 1h1v16h-1z"></path>
+            <rect width="19.75" height="16.886" x=".625" y=".625" stroke="#353A36" stroke-width="1.25" rx="2"></rect>
+            <path stroke="#353A36" stroke-linecap="round" stroke-width="1.25" d="M4.4 0v2.625M16.25 0v2.625"></path>
+            <path stroke="#353A36" stroke-linecap="square" stroke-width="1.25" d="M.955 5.011h19.09"></path>
+            <path fill="#353A36" d="M6.682 7.636h1.193v1.193H6.682zM6.682 10.5h1.193v1.193H6.682zM6.682 13.364h1.193v1.193H6.682zM3.341 10.5h1.193v1.193H3.341zM3.341 13.364h1.193v1.193H3.341zM10.023 7.636h1.193v1.193h-1.193zM10.023 10.5h1.193v1.193h-1.193zM10.023 13.364h1.193v1.193h-1.193zM13.125 7.636h1.193v1.193h-1.193zM13.125 10.5h1.193v1.193h-1.193zM13.125 13.364h1.193v1.193h-1.193zM16.227 7.636h1.193v1.193h-1.193zM16.227 10.5h1.193v1.193h-1.193z"></path>
+          </g>
+        </g>
+      </symbol>
+    </svg>
+
+    $$body$$
+
+    <div style="padding: 0 100px;">
+      <h2>猫猫信息</h2>
+    </div>
+    <br />
+    <div class="KittyBanner KittyBanner--890044">
+      <div class="Container Container--full">
+        <div class="KittyBanner-container KittyBanner--bg-{{color}} KittyBanner-container--shadow-{{color}}">
+          <div class="KittyImage KittyBanner-image KittyImage--display-banner KittyImage--color-{{color}} KittyImage--no-hover">
+            <div class="KittyImage-main">
+              <div class="KittyGraphic-main-container">
+                <div class="KittyGraphic-imageWrap KittyGraphic-imageWrap--center">
+                  <div class="KittyGraphic-imageContainer KittyGraphic-imageContainer--shadow KittyGraphic-imageContainer--default">
+                    <img class="KittyGraphic-image" id="cat_image" alt="加载中...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div style="padding: 64px 0px;">
+      <div class="div_total">
+        <div class="div_item">
+          <div class="KittyHeader">
+            <div class="KittyHeader-main">
+              <div class="KittyHeader-name">
+                <h1 class="KittyHeader-name-text" id="cat_name"></h1>
+              </div>
+              <div class="KittyHeader-details">
+                <span class="KittyHeader-details-item">
+                  <svg class="IconV2 KittyHeader-details-icon IconV2--position-default IconV2--display-inlineBlock" width="16" height="16" viewBox="0 0 16 16"><g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g stroke="#c4c3c0" stroke-width="1.5"><path d="M6.472 1.654L4.388 14.346M11.458 1.654L9.374 14.346M14.504 6H1.654M14.502 10.72H1.654"></path></g></g></svg>
+                  {{cat_id}}
+                </span>
+                <a class="KittyHeader-details-item KittyHeader-details-generation">
+                  <svg class="IconV2 KittyHeader-details-icon IconV2--position-default IconV2--display-inlineBlock" width="16" height="16" viewBox="0 0 16 16"><g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g stroke="#c4c3c0" stroke-width="1.5"><path stroke-linecap="round" d="M12 1c0 7.019-8 6.282-8 14M4 1c0 7.019 8 6.282 8 14"></path><path stroke-linecap="square" d="M5 2.5h6M5 13h6M6 5h4M6 10.5h4"></path></g></g></svg>
+                  <span><span id="generation">-1 代</span></span>
+                </a>
+                <span class="KittyHeader-details-item KittyHeader-details-condition">
+                  <svg class="IconV2 KittyHeader-details-icon IconV2--position-default IconV2--display-inlineBlock" width="16" height="16" viewBox="0 0 16 16"><g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g stroke="#c4c3c0" stroke-width="1.5"><circle cx="8" cy="8" r="6.25"></circle><path stroke-linecap="round" stroke-linejoin="round" d="M8 4.5v4.031h3.028"></path></g></g></svg>
+                  <span id="cooldown">冷却时间</span>
+                </span>
+              </div>
+            </div>
+            <div class="KittyHeader-owner">
+              <span class="KittyHeader-owner-details">
+                <a class="KittyHeader-owner-name" id="owner_addr"></a>
+                <span class="KittyHeader-owner-label">主人</span>
+              </span>
+            </div>
+            <div class="KittyHeader-actions" style="flex-direction: column;" id="birth_elem">
+            </div>
+          </div>
+        </div>
+        <div class="div_item" id="sale_tot_elem">
+          <div class="-content">
+            <div class="KittyBid KittyBid--sale">
+              <div class="KittyBid-boxes" id="sale_elem">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="div_item">
+          <div class="-header">
+            <h2 class="-header-title">生平简介</h2>
+          </div>
+          <div class="-content">
+            <p id="comment" style="margin-bottom: 20px;"></p>
+            <div>
+              <div class="BIcon">
+                <div><svg viewBox="0 0 42 42" class="CircleIcon"><use xlink:href="#activity-history"></use></svg></div>
+                <div>
+                  <span>
+                    <div>生日</div>
+                    <h3 id="birthday">1970/1/1</h3>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="div_item">
+          <div class="-header">
+            <h2 class="-header-title">喵属性</h2>
+          </div>
+          <div class="-content AttrDiv">
+            <ul>
+              <li>
+                <span class="AttrTitle">
+                   出生时间
+                </span>
+                <span id="birth_time" class="AttrCon">
+                </span>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <span class="AttrTitle">
+                  主人&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </span>
+                <span id="full_owner" class="AttrCon2">
+                </span>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <span class="AttrTitle">
+                  基因&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </span>
+                <span id="genes" class="AttrCon3">
+                </span>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <span class="AttrTitle">
+                  当前状态
+                </span>
+                <span id="status" class="AttrCon">
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="div_item">
+          <div class="-header">
+            <h2 class="-header-title">喵父母</h2>
+          </div>
+          <div class="-content" id="parent_elem">
+            <div class="KittyParents">
+              <div class="KittyParents-labels">
+                <p class="KittyParents-label">母亲</p>
+                <p class="KittyParents-label">父亲</p>
+              </div>
+              <div class="KittiesList">
+                <div class="KittiesList-items">
+                  <div class="KittiesList-item">
+                    <a id="mother_link">
+                      <div class="KittyCard KittyCard--display-thumbnail" role="button" data-view="KittyCard" id="mother_card">
+                        <div class="KittyCard-main">
+                          <div class="KittyCard-main-container">
+                            <div class="KittyCard-imageContainer KittyCard-imageContainer--shadow">
+                              <img id="mother_img" class="KittyCard-image" alt="加载中...">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="KittiesList-item">
+                    <a id="father_link">
+                      <div class="KittyCard KittyCard--display-thumbnail" role="button" data-view="KittyCard" id="father_card">
+                        <div class="KittyCard-main">
+                          <div class="KittyCard-main-container">
+                            <div class="KittyCard-imageContainer KittyCard-imageContainer--shadow">
+                              <img id="father_img" class="KittyCard-image" alt="加载中...">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="div_item">
+          <div class="-header">
+            <h2 class="-header-title">喵喵配种</h2>
+          </div>
+          <div class="-content" id="mating_elem" style="display: flex;">
+            <div class="KittyParents">
+              <div class="KittyParents-labels" style="margin-top: 15px;">
+                <p class="KittyParents-label" style="font-size:15px; align-self: center;">母亲</p>
+                <p class="KittyParents-label" style="font-size:15px;">父亲</p>
+              </div>
+              <div class="KittiesList">
+                <div class="KittiesList-items">
+                  <div class="KittiesList-item">
+                    <a>
+                      <div class="KittyCard KittyCard--display-thumbnail KittyCard--color-{{color}}" role="button" data-view="KittyCard">
+                        <div class="KittyCard-main">
+                          <div class="KittyCard-main-container">
+                            <div class="KittyCard-imageContainer KittyCard-imageContainer--shadow">
+                              <img id="self_img" class="KittyCard-image" alt="加载中...">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="KittiesList-item">
+                    <a id="mate_link">
+                      <div class="KittyCard KittyCard--display-thumbnail KittyCard--color-nocolor" role="button" data-view="KittyCard" id="mate_card">
+                        <div class="KittyCard-main">
+                          <div class="KittyCard-main-container">
+                            <div class="KittyCard-imageContainer KittyCard-imageContainer--shadow">
+                              <img id="mate_img" class="KittyCard-image" alt="加载中...">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="KittyParents-labels" style="margin-top: 15px;">
+                <p class="KittyParents-label" style="font-size:15px; align-self: center; text-align: center;">自己</p>
+                <p class="KittyParents-label" style="font-size:15px;">
+                  <label>
+                    <select id="mates">
+                    </select>
+                  </label>
+                </p>
+              </div>
+            </div>
+            <div class="KittyBid-action" style="margin-left: 80px;">
+              <div class="_2kvQkVxvlo5cXr2ZOAqWDa">
+                <button class="ButtonV2 ButtonV2--size-default ButtonV2--color-orange" data-tracking="mxpnl-buypage-buynow" id="mate_button">
+                  <span class="ButtonV2-children">猫猫贴贴~</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    var cat_id = {{cat_id}};
+    var err_msg = '{{err_msg}}';
+    /*
+    async function set_info(cat_id) {
+      // body...
+      cat_info = await get_info(cat_id).catch(err => {window.open('/err?msg='+err, '_self');});
+      "Hi. I respond to #1 TUNDRA, although that doesn't mean I'll acknowledge you. I try to live my life the way I think Peggy Bundy would. Wanna hold hands?";
+    }
+    */
+    get_info(cat_id).catch(window.alert);
+  </script>
+</html>
